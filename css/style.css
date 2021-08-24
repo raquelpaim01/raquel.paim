@@ -1,0 +1,222 @@
+ /*reset*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+/*variaveis*/
+:root {
+    --main-color: #FFB6C1;
+    --main-text-color: #FFF;
+    --border-color: #999;
+    --bio-bg-color: #1E2A3A;
+    --bio-border-color: #293544;
+    --about-bg-color: #111821;
+}
+
+/*geral*/
+.highlight {
+    color:var(--main-color);
+}
+/*Containers*/
+#container {
+    display: flex;
+    flex-direction: row;
+    color : var(--main-text-color);
+}
+
+#bio-container {
+    flex: 1 1 20%;
+    min-height: 100vh;
+    background-color: var(--bio-bg-color);
+    text-align: center;
+    padding: 30px 12px;
+    border-right: 5px solid var(--bio-border-color);
+    background-color: var(--about-bg-color);
+}
+#about-container {
+    flex: 1 1 80%;
+    height: 100%;
+    background-color: var(--about-bg-color);
+    padding: 50px;
+
+}
+#bio-container #welcome-text {
+    font-weight: bold;
+
+}
+#bio-container h2 {
+    margin-bottom: 25px;
+}
+#bio-container p {
+    margin-bottom: 10px;
+}
+
+#bio-img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin-bottom: 25%;
+}
+#social-container {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border-radius: 1px solid var(--border-color);
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+
+}
+#social-container li {
+    flex: 1 1 0;
+    max-width: 60px;
+    
+
+}
+#social-container li a {
+
+    color: var(--main-color);
+    font-size: 30px;
+
+}
+#email-container {
+    display: flex;
+    justify-content: center;
+}
+#email-container ion-icon,
+
+#email-container ion-icon {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 5px;
+    max-width: 20%;
+
+}
+#email-container a {
+    flex: 1 1 0;
+    color: var(--main-text-color);
+    text-decoration: none;
+    max-width: 125px;
+}
+
+
+/*about container*/
+#name {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+#title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+#description {
+    max-width: 55%;
+    margin-bottom: 10%;
+    
+}
+#btn-projects {
+    font-weight: bold;
+    font-style:oblique;
+    color: var(--main-text-color);
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .5s;
+    margin: 25px;
+    margin-left: 0px ;
+    padding: 12px 10px;
+    width: 150px;
+    text-align: center;
+    display: flex;
+}
+#btn-projects ion-icon,
+#btn-projects span {
+    flex: 1 1 0;
+}
+#btn-projects ion-icon {
+    font-size: 10px;
+    max-width: 10px;
+}
+#btn-projects:hover {
+    background-color: transparent;
+}
+
+#skills-section-title {
+    border-top: 1px solid var(--border-color);
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+#skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.skills-box {
+    flex: 1 1   20%;
+    max-width: 20%;
+    margin-bottom: 5%;
+}
+.skills-title {
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 5px solid var(--main-color);
+
+}
+.skill-box {
+    flex: 1 1 50%;
+    max-width: 50%;
+    margin-bottom: 10%;
+    text-align: left;
+}
+.skills-box i {
+    font-size: 45px;
+    margin-right: 10%;
+
+}
+/*mobile*/
+@media(max-width: 450px){
+    #container {
+        flex-direction: column;
+
+    }
+    #bio-container {
+        min-width: auto;
+        border-right: none;
+        border-bottom: 5px var(--bio-border-color);
+    }
+    #bio-container h2 {
+        display: none;
+
+    }
+    #bio-container p {
+        max-width: 60%;
+        margin: 10px auto;
+    }
+    #about-container {
+        text-align: center;
+        padding: 30%
+    }
+    #about-container .description {
+        margin: 10px auto;
+        max-width: 100%;
+        line-height: 26px;
+    }
+    #btn-projects {
+        margin: 20px auto;
+    }
+    .skills-box {
+        flex : 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    .skills-box i{
+        font-size: 60px;
+    }
+}
