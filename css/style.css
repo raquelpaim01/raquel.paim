@@ -217,10 +217,10 @@
     .skills-box {
         flex : 1 1 100%;
         max-width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         text-align: center;
     }
     .skills-box i{
-        font-size: 60px;
+        font-size: 40px;
     }
 }
