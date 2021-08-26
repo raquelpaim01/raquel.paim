@@ -195,7 +195,7 @@
 
     }
     #bio-container p {
-        max-width: 30%;
+        max-width: 40%;
         margin: 10px auto;
     }
     #about-container {
@@ -217,7 +217,7 @@
     .skills-box {
         flex : 1 1 100%;
         max-width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         text-align: center;
     }
     .skills-box i{
